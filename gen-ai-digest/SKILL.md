@@ -1,12 +1,12 @@
 ---
 name: gen-ai-digest
-description: Produces a themed GenAI digest from a curated list of blogs covering the last 48 hours, saved as a dated markdown file on the Desktop. Use only when the user explicitly invokes /gen-ai-digest.
+description: Produces a themed GenAI digest from a curated list of blogs covering the last 48 hours, saved as a dated markdown file in the gen-ai-digest repo. Use only when the user explicitly invokes /gen-ai-digest.
 version: 1.0.0
 ---
 
 # GenAI Digest
 
-Fetch recent posts from a curated blog list, group them by theme, and write a dated markdown digest to `~/Desktop/gen-ai-digest/YYYY-MM-DD.md`.
+Fetch recent posts from a curated blog list, group them by theme, and write a dated markdown digest to `~/Documents/GitHub/claude-skills/gen-ai-digest/digests/YYYY-MM-DD.md`.
 
 ## Sources
 
@@ -28,8 +28,8 @@ Only include posts published within the last 48 hours. If a source is unreachabl
 2. Identify 3–6 themes across the posts (e.g. "AI Agents", "Models & Releases", "Practical Tools", "Policy & Industry")
 3. Group posts under themes — a post can appear under only one theme
 4. Write the digest file
-5. Create the output directory if it doesn't exist: `~/Desktop/gen-ai-digest/`
-6. Save as `~/Desktop/gen-ai-digest/YYYY-MM-DD.md` using today's date
+5. Create the output directory if it doesn't exist: `~/Documents/GitHub/claude-skills/gen-ai-digest/digests/`
+6. Save as `~/Documents/GitHub/claude-skills/gen-ai-digest/digests/YYYY-MM-DD.md` using today's date
 
 ## Output Format
 
